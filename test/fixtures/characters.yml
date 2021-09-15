@@ -1,0 +1,27 @@
+# == Schema Information
+#
+# Table name: characters
+#
+#  id         :integer          not null, primary key
+#  age        :integer
+#  history    :text
+#  image      :string
+#  name       :string
+#  weight     :float
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+one:
+  imagen: MyString
+  name: MyString
+  age: 1
+  weight: 1.5
+  history: MyText
+
+two:
+  imagen: MyString
+  name: MyString
+  age: 1
+  weight: 1.5
+  history: MyText
