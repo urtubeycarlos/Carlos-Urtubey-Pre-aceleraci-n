@@ -39,6 +39,12 @@ ActiveRecord::Schema.define(version: 2021_09_15_134540) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "jwt_denylist", force: :cascade do |t|
+    t.string "jti", null: false
+    t.datetime "exp", null: false
+    t.index ["jti"], name: "index_jwt_denylist_on_jti"
+  end
+
   create_table "movies", force: :cascade do |t|
     t.string "image"
     t.string "title"
